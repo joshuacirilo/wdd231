@@ -13,34 +13,63 @@
 <link rel="stylesheet" href="styles/larger.css"> 
 
 
-
-
 </head>
 <body>
     <header>
-        <img src="images/hogar.svg" alt="Site logo" width="512" height="512">
-        <span>Paul´s site title</span>
+        <img src="images/avion-de-papel.svg" alt="Site logo" width="512" height="512">
+        <span>Joshua's Site</span>
         <button id="ham-btn" class="hamburger"></button>
     </header>
     <nav id="nav-bar" class="navigation">
         <ul>
-            <li ><a href="#">News & Events</a></li>
-            <li class="current"><a href="#">Dedicated temples</a></li>
-            <li><a href="#">Announced temples</a></li>
+            <li class="current"><a href="#">Home</a></li>
+            <li ><a href="#">Chamber</a></li>
+            <li><a href="#">Final</a></li>
         </ul>
     </nav>
+
+
     <main>
-        <h1>Dedicated temple</h1>
+        <h1>Web and computer programming certificate</h1>
+
+  <div class="courses-container">
+   <!-- Botones de filtro -->
+        <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="all">All Courses</button>
+            <button class="filter-btn" data-filter="WDD">WDD Courses</button>
+            <button class="filter-btn" data-filter="CSE">CSE Courses</button>
+        </div>
+
+        <!-- Contenedor único para los cursos -->
+        <div class="courses-container">
+            <section aria-labelledby="courses-heading">
+                <h2 id="courses-heading">All Courses</h2>
+                <div class="courses-grid" id="courses-grid">
+                    <!-- Los cursos se insertarán aquí dinámicamente -->
+                </div>
+            </section>
+        </div>
     </main>
+
+
+
     <footer>
         <div class="Social">
         <a href="https://github.com/joshuacirilo" target="_blank"><img src="images/github.svg" alt="Github" width="16" height="16"></a>
         <a href="https://www.linkedin.com/in/joshua-cirilo-8640322ab/" target="_blank"><img src="images/linkedin.svg" alt="linkedin" width="16" height="16"></a>
         <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.svg" alt="facebook" width="16" height="16"></a>
         </div>
-        <p>Copyrighty symbol and current year</p>
-        <p>Last Modified</p>
+        <p>© 2025 🔭 Joshua Cirilo🔭 Guatemala</p>
+        <p id="full"></p>
+        <p id="world-full"></p>
+        <p id="short"></p>
+        <p id="medium"></p>
+        <p id="year"></p>
     </footer>
-    <script src="scripts/navigation.js"></script>
+    
+    <!--scripts-->
+<script src="scripts/navigation.js"></script>
+<script src="scripts/getdate.js"></script>
 </body>
+<script src="scripts/courselistarray.js"></script>
 </html>
