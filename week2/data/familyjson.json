@@ -1,0 +1,16 @@
+{
+    "family name" : "Alegria",
+    "moved_date_into_the_ward" : "9/13/2025",
+    "number_people_family" : 7,
+    "visited_by_bishop": true,
+    "individual_family_data" : 
+    [
+        {
+            "name": "joshua"
+        },
+        {
+            "name": "Pedro"
+        }
+    ]
+
+}
