@@ -1,0 +1,84 @@
+{
+    "Chamber" : "GuateBusiness",
+    "companies" : 
+    [
+        {
+            "name": "Solara Tech Solutions",
+            "address": "123 Innovation Blvd, Zona 14, Guatemala City",
+            "phone": "+502 2290 1234",
+            "website": "https://www.solaratech.gt",
+            "image": ".../images/",
+            "membership_level": 3,
+            "industry": "Information Technology",
+            "contact_person": "Ana Morales",
+            "email": "ana.morales@solaratech.gt"
+        },
+        {
+            "name": "Café Colonial",
+            "address": "456 Aroma Street, Zona 10, Guatemala City",
+            "phone": "+502 2234 5678",
+            "website": "https://www.cafecolonial.com",
+            "image": "cafe_colonial_logo.jpg",
+            "membership_level": 1,
+            "industry": "Food & Beverage",
+            "contact_person": "Luis Herrera",
+            "email": "info@cafecolonial.com"
+        },
+        {
+            "name": "Maya Eco Tours",
+            "address": "789 Explorer Ave, Antigua Guatemala",
+            "phone": "+502 7832 1122",
+            "website": "https://www.mayaecotours.gt",
+            "image": "maya_tours_icon.png",
+            "membership_level": 2,
+            "industry": "Tourism & Travel",
+            "contact_person": "Carla Ruiz",
+            "email": "carla@mayaecotours.gt"
+        },
+        {
+            "name": "GuateBuild Constructors",
+            "address": "321 Skyline Road, Zona 15, Guatemala City",
+            "phone": "+502 2444 9988",
+            "website": "https://www.guatebuild.com",
+            "image": "guatebuild_logo.png",
+            "membership_level": 3,
+            "industry": "Construction & Engineering",
+            "contact_person": "Jorge Castillo",
+            "email": "jorge.castillo@guatebuild.com"
+        },
+        {
+            "name": "EcoVida Organics",
+            "address": "654 Greenway, Mixco, Guatemala",
+            "phone": "+502 2478 3344",
+            "website": "https://www.ecovida.gt",
+            "image": "ecovida_icon.jpg",
+            "membership_level": 2,
+            "industry": "Agriculture & Sustainability",
+            "contact_person": "María López",
+            "email": "contact@ecovida.gt"
+        },
+        {
+            "name": "Financia Capital",
+            "address": "987 Finance Plaza, Zona 4, Guatemala City",
+            "phone": "+502 2201 5566",
+            "website": "https://www.financia.gt",
+            "image": "financia_logo.png",
+            "membership_level": 1,
+            "industry": "Financial Services",
+            "contact_person": "Ricardo Menéndez",
+            "email": "rmenendez@financia.gt"
+        },
+        {
+            "name": "Arte & Diseño Studio",
+            "address": "159 Creative Lane, Zona 1, Guatemala City",
+            "phone": "+502 2311 7788",
+            "website": "https://www.artediseno.com",
+            "image": "artediseno_icon.png",
+            "membership_level": 2,
+            "industry": "Design & Marketing",
+            "contact_person": "Sofía Gómez",
+            "email": "hello@artediseno.com"
+        }
+    ]
+
+}
