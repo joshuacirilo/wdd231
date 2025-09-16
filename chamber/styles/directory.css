@@ -1,0 +1,154 @@
+/* General */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #FFFFFF;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* general container*/
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/************************************* Header *******************************************/
+.site-header {
+  background-color: #1D4ED8; 
+  color: #FFFFFF;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.logo {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav a:hover {
+  color: #10B981; 
+}
+
+.btn-cta {
+  background-color: #10B981;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.btn-cta:hover {
+  background-color: #0b8c65;
+}
+
+
+
+
+/*********************** Footer ***********************************/
+.site-footer {
+  background-color: #F3F4F6; 
+  padding: 2rem 0;
+  margin-top: 2rem;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+}
+
+.footer-content h3,
+.footer-content h4 {
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 0.5rem;
+  color: #1D4ED8; 
+}
+
+.footer-content ul {
+  list-style: none;
+}
+
+.footer-content ul li {
+  margin: 0.3rem 0;
+}
+
+.footer-content a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s;
+}
+
+.footer-content a:hover {
+  color: #1D4ED8;
+}
+
+.footer-bottom {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #ccc;
+  color: #666;
+}
+
+
+.get-date {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;   
+  justify-content: center; 
+  text-align: center;
+}
+
+
+/************************* Social  ***************************************/
+.Social {
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+
+}
+
+.Social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border: #ccc solid 1px;
+    border-radius: 22px;
+}
+
+.Social img {
+    width: 22px;
+    height: 22px;
+}
+
+
+.Social a:hover {
+    background-color: #ddd;
+}
+
