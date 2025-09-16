@@ -6,10 +6,14 @@
     "individual_family_data" : 
     [
         {
-            "name": "joshua"
+            "name": "joshua",
+            "gender": "Male",
+            "birthdate": "1990-05-15"
         },
         {
-            "name": "Pedro"
+            "name": "Pedro",
+            "gender": "Male",
+            "birthdate": "1990-05-15"
         }
     ]
 
