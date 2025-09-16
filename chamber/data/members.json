@@ -7,7 +7,7 @@
             "address": "123 Innovation Blvd, Zona 14, Guatemala City",
             "phone": "+502 2290 1234",
             "website": "https://www.solaratech.gt",
-            "image": ".../images/",
+            "image": "https://raw.githubusercontent.com/joshuacirilo/wdd231/refs/heads/main/chamber/images/solara_icon.png",
             "membership_level": 3,
             "industry": "Information Technology",
             "contact_person": "Ana Morales",
