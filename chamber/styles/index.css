@@ -1,15 +1,26 @@
 #hero {
   position: relative;
-  background: url('/chamber/images/hero image.png') no-repeat center center/cover; /* cambia la imagen */
-  color: #fff;
   height: 30vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
   border-radius: 15px;
   margin: 2rem auto;
   max-width: 1200px;
+  overflow: hidden;
+}
+
+.hero-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
 }
 
 
