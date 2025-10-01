@@ -11,7 +11,9 @@
             "membership_level": 3,
             "industry": "Information Technology",
             "contact_person": "Ana Morales",
-            "email": "ana.morales@solaratech.gt"
+            "email": "ana.morales@solaratech.gt",
+            "membership": "Gold"
+
         },
         {
             "name": "Café Colonial",
@@ -22,7 +24,8 @@
             "membership_level": 1,
             "industry": "Food & Beverage",
             "contact_person": "Luis Herrera",
-            "email": "info@cafecolonial.com"
+            "email": "info@cafecolonial.com",
+            "membership": "Silver"
         },
         {
             "name": "Maya Eco Tours",
@@ -33,7 +36,8 @@
             "membership_level": 2,
             "industry": "Tourism & Travel",
             "contact_person": "Carla Ruiz",
-            "email": "carla@mayaecotours.gt"
+            "email": "carla@mayaecotours.gt",
+            "membership": "Gold"
         },
         {
             "name": "GuateBuild Constructors",
@@ -44,7 +48,8 @@
             "membership_level": 3,
             "industry": "Construction & Engineering",
             "contact_person": "Jorge Castillo",
-            "email": "jorge.castillo@guatebuild.com"
+            "email": "jorge.castillo@guatebuild.com",
+            "membership": "Silver"
         },
         {
             "name": "EcoVida Organics",
@@ -55,7 +60,8 @@
             "membership_level": 2,
             "industry": "Agriculture & Sustainability",
             "contact_person": "María López",
-            "email": "contact@ecovida.gt"
+            "email": "contact@ecovida.gt",
+            "membership": "Gold"
         },
         {
             "name": "Financia Capital",
@@ -66,7 +72,8 @@
             "membership_level": 1,
             "industry": "Financial Services",
             "contact_person": "Ricardo Menéndez",
-            "email": "rmenendez@financia.gt"
+            "email": "rmenendez@financia.gt",
+            "membership": "Copper"
         },
         {
             "name": "Arte & Diseño Studio",
@@ -77,7 +84,8 @@
             "membership_level": 2,
             "industry": "Design & Marketing",
             "contact_person": "Sofía Gómez",
-            "email": "hello@artediseno.com"
+            "email": "hello@artediseno.com",
+            "membership": "Copper"
         }
     ]
 

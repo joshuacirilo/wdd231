@@ -4,15 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>OpenWeatherMa</title>
+
+<link rel="stylesheet" href="styles/index.css"> 
+
 </head>
 <body>
     <h1>OpenWeatherMap.org API Test</h1>
 <main>
-  <p>The current temperature in Trier, Germany is <span id="current-temp"></span></p>
-  <figure>
-    <img id="weather-icon" src="" alt="">
-    <figcaption></figcaption>
-  </figure>
+  <div class="card">
+    <h2 id="town"></h2>
+    <img id="graphic" src="" alt="">
+    <p id="description"></p>
+    <p id="temperature"></p>
+  </div>
 </main>
 <footer>
   JoshuaCirilo | OpenWeatherMap.org | CC BY-SA 4.0
@@ -20,3 +24,4 @@
 <script src="scripts/index.js"></script>
 </body>
 </html>
+

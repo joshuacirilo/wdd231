@@ -1,0 +1,157 @@
+#hero {
+  position: relative;
+  background: url('/chamber/images/hero image.png') no-repeat center center/cover; /* cambia la imagen */
+  color: #fff;
+  height: 30vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 15px;
+  margin: 2rem auto;
+  max-width: 1200px;
+}
+
+
+/* Call to Action */
+#call-to-action {
+  text-align: center;
+  margin: 2rem auto;
+}
+
+#call-to-action a {
+  display: inline-block;
+  background-color: #1D4ED8;
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+#call-to-action a:hover {
+  background-color: #10B981;
+}
+
+/* Current Events */
+#current-events {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  padding: 1.5rem;
+  margin: 2rem auto;
+  max-width: 1200px;
+}
+
+#current-events h2 {
+  color: #1D4ED8;
+  margin-bottom: 1rem;
+}
+
+/* Weather Section */
+#weather {
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  padding: 1.5rem;
+  margin: 2rem auto;
+  max-width: 1200px;
+  text-align: center;
+}
+
+#weather h2 {
+  color: #1D4ED8;
+  margin-bottom: 1rem;
+}
+
+#weather img {
+  width: 80px;
+  height: 80px;
+}
+
+/* Spotlights Section */
+#spotlights {
+  padding: 60px 20px;
+  background-color: #f8f9fa;
+  text-align: center;
+}
+
+#spotlights h2 {
+  font-size: 2.2rem;
+  margin-bottom: 40px;
+  color: #222;
+}
+
+.spotlight-container {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* Each spotlight card */
+.spotlight {
+  background: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 30%;
+  min-width: 280px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.spotlight:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Company logo */
+.spotlight img {
+  width: 100%;
+  max-width: 160px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* Company name */
+.spotlight h2 {
+  color: #004aad;
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+/* Info text */
+.spotlight p {
+  color: #555;
+  line-height: 1.5;
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+}
+
+/* Website link */
+.spotlight a {
+  color: #004aad;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.spotlight a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media (max-width: 960px) {
+  .spotlight {
+    width: 100%;
+    max-width: 400px;
+  }
+}
