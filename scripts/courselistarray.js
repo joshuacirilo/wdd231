@@ -67,13 +67,11 @@ function createCourseCard(course) {
     const statusClass = course.completed ? 'completed' : 'pending';
     
     return `
-        <article class="course-card ${statusClass}">
+        <article class="course-card ${statusClass}" data-number="${course.number}" data-subject="${course.subject}">
             <header class="course-header">
                 <h3 class="course-title">${course.subject} ${course.number}: ${course.title}</h3>
                 <span class="course-credits">${course.credits} credits</span>
             </header>
-            
-            <p class="course-description">${course.description}</p>
             
             <div class="course-technologies">
                 ${course.technology.map(tech => 
@@ -87,9 +85,12 @@ function createCourseCard(course) {
                 </span>
                 <span class="course-certificate">${course.certificate}</span>
             </div>
+
+            <button class="details-btn" type="button">View Details</button>
         </article>
     `;
 }
+
 
 // put the courses
 function renderCourses(filter = 'all') {
@@ -116,7 +117,10 @@ function renderCourses(filter = 'all') {
     ).join('');
     
     coursesGrid.innerHTML = coursesHTML;
+
+    setupCourseCards();
 }
+
 
 // setupFilterButtons
 function setupFilterButtons() {
@@ -138,6 +142,48 @@ function setupFilterButtons() {
         });
     });
 }
+
+
+function setupCourseCards() {
+    const detailButtons = document.querySelectorAll('.details-btn');
+    const dialog = document.getElementById('course-details');
+    const closeBtn = document.getElementById('closeModal');
+
+    detailButtons.forEach(button => {
+        button.addEventListener('click', (e) => {
+            const card = e.target.closest('.course-card');
+            const subject = card.getAttribute('data-subject');
+            const number = card.getAttribute('data-number');
+
+            // Buscar el curso correspondiente
+            const course = courses.find(c => 
+                c.subject === subject && c.number == number
+            );
+
+            if (course) {
+                // Rellenar el contenido del diálogo
+                dialog.innerHTML = `
+                    <h2>${course.subject} ${course.number}: ${course.title}</h2>
+                    <p><strong>Credits:</strong> ${course.credits}</p>
+                    <p><strong>Certificate:</strong> ${course.certificate}</p>
+                    <p><strong>Description:</strong> ${course.description}</p>
+                    <p><strong>Technologies:</strong> ${course.technology.join(', ')}</p>
+                    <p><strong>Status:</strong> ${course.completed ? '✅ Completed' : '⏳ Pending'}</p>
+                    <button id="closeModal" type="button">Close</button>
+                `;
+
+                // Mostrar el modal
+                dialog.showModal();
+
+                // Reasignar el botón de cierre (porque el HTML del diálogo fue reemplazado)
+                const newCloseBtn = dialog.querySelector('#closeModal');
+                newCloseBtn.addEventListener('click', () => dialog.close());
+            }
+        });
+    });
+}
+
+
 
 
 document.addEventListener('DOMContentLoaded', function() {
