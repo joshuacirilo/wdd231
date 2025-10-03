@@ -12,6 +12,8 @@
 
     <link rel="stylesheet" href="styles/directory.css">
     <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/join.css">
+    <link rel="stylesheet" href="styles/benefits_cars.css">
     <!--Link of favicon-->
     <link rel="icon" href="images/favicon.ico">
 
@@ -32,15 +34,133 @@
   </header>
 
 
-  <main>
+  <main>   
+    <form method="get" action="thankyou.html">
+        <h1>Membership Application</h1>
 
+        <!-- Applicant's first name -->
+        <label for="firstName">First Name:</label>
+        <input 
+        type="text" 
+        id="firstName" 
+        name="firstName" 
+        required 
+        title="Enter your first name" 
+        autocomplete="given-name">
 
-    <h1>hello world-full</h1>
+        <!-- Applicant's last name -->
+        <label for="lastName">Last Name:</label>
+        <input 
+        type="text" 
+        id="lastName" 
+        name="lastName" 
+        required 
+        title="Enter your last name" 
+        autocomplete="family-name">
+
+        <!-- Organizational title -->
+        <label for="orgTitle">Organizational Title:</label>
+        <input 
+        type="text" 
+        id="orgTitle" 
+        name="orgTitle" 
+        title="Enter your organizational title" 
+        autocomplete="organization-title" 
+        pattern="[A-Za-z\s\-]{7,}" 
+        required>
+
+        <!-- Email -->
+        <label for="email">Email Address:</label>
+        <input 
+        type="email" 
+        id="email" 
+        name="email" 
+        required 
+        title="Enter your email address" 
+        autocomplete="email" 
+        placeholder="example@email.com">
+
+        <!-- Phone -->
+        <label for="phone">Mobile Phone:</label>
+        <input 
+        type="tel" 
+        id="phone" 
+        name="phone" 
+        required 
+        title="Enter your mobile phone number" 
+        autocomplete="tel">
+
+        <!-- Organization name -->
+        <label for="organization">Organization Name:</label>
+        <input 
+        type="text" 
+        id="organization" 
+        name="organization" 
+        required 
+        title="Enter your organization name" 
+        autocomplete="organization">
+
+        <!-- Membership selection -->
+        <label for="membership">Membership Level:</label>
+        <select 
+        id="membership" 
+        name="membership" 
+        title="Select a membership level">
+        <option value="NP">NP Membership (Non-Profit - Free)</option>
+        <option value="Bronze">Bronze Membership</option>
+        <option value="Silver">Silver Membership</option>
+        <option value="Gold">Gold Membership</option>
+        </select>
+
+        <!-- Organization description -->
+        <label for="description">Organization Description:</label>
+        <textarea 
+        id="description" 
+        name="description" 
+        title="Describe your organization" 
+        rows="4" 
+        cols="40"></textarea>
+
+        <!-- Hidden timestamp -->
+        <input 
+        type="hidden" 
+        id="timestamp" 
+        name="timestamp">
+
+        <!-- Submit button -->
+        <button type="submit">Submit Application</button>
+    </form>
+
+    <!-- Cards Section -->
+    <section class="membership-cards">
+      <div class="card" data-modal="membershipModal">
+        <h3>Membership Level</h3>
+        <p>Basic access to community resources and updates.</p>
+        <a href="#" class="benefit-link">See Benefits</a>
+      </div>
+
+      <div class="card bronze" data-modal="bronzeModal">
+        <h3>Bronze Membership</h3>
+        <p>Perfect for small businesses starting their journey.</p>
+        <a href="#" class="benefit-link">See Benefits</a>
+      </div>
+
+      <div class="card silver" data-modal="silverModal">
+        <h3>Silver Membership</h3>
+        <p>Includes promotional support and event participation.</p>
+        <a href="#" class="benefit-link">See Benefits</a>
+      </div>
+
+      <div class="card gold" data-modal="goldModal">
+        <h3>Gold Membership</h3>
+        <p>All benefits plus spotlight advertising and event discounts.</p>
+        <a href="#" class="benefit-link">See Benefits</a>
+      </div>
+    </section>
+
+  <div id="modals-container"></div>
 
   </main>
-
-
-
 
 
  <!--begining of the footer-->
@@ -83,7 +203,8 @@
   </footer>
 
 
-  <script src="scripts/getdate.js"></script>  
+  <script src="scripts/getdate.js"></script>
+  <script src="scripts/benefits_cards.js"></script>   
 
 </body>
 </html>
