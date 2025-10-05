@@ -1,0 +1,56 @@
+{
+    "Chamber" : "GuateBusiness",
+    "items" : 
+
+    [
+        {
+            "name": "Antigua Guatemala",
+            "location": "Antigua Guatemala, Sacatepéquez Department, Guatemala",
+            "description": "A charming colonial city surrounded by volcanoes, known for its cobblestone streets, colorful facades, and baroque architecture. A UNESCO World Heritage Site and cultural heart of Guatemala.",
+            "image_url": "https://tse1.mm.bing.net/th/id/OIP.gzk6HXM6r7L2u3FIq61hogHaE7?cb=12&pid=Api"
+        },
+        {
+            "name": "Lake Atitlán",
+            "location": "Sololá Department, Guatemala",
+            "description": "A breathtaking lake surrounded by the volcanoes Atitlán, Tolimán, and San Pedro. Visitors can explore nearby Mayan villages each with its own crafts and traditions.",
+            "image_url": null
+        },
+        {
+            "name": "Tikal National Park",
+            "location": "Flores, Petén Department, Guatemala",
+            "description": "One of the most important ancient Maya archaeological sites, hidden in the jungle, featuring towering temples and plazas in a rainforest setting.",
+            "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWrmepZczCk1tduQh3qIdILxibGJCpOvyhDQ&s"
+        },
+        {
+            "name": "Chichicastenango Market",
+            "location": "Chichicastenango, Quiché Department, Guatemala",
+            "description": "A vibrant highland market famous for handcrafted textiles, wood carvings, and Mayan masks. Open on Thursdays and Sundays, it also includes the historic Santo Tomás Church.",
+            "image_url": null
+        },
+        {
+            "name": "Pacaya Volcano",
+            "location": "Near San Vicente Pacaya, Escuintla Department, Guatemala",
+            "description": "An active volcano offering accessible hikes. Adventurers can reach lava fields and roast marshmallows over natural volcanic heat vents while enjoying panoramic views.",
+            "image_url": null
+        },
+        {
+            "name": "Semuc Champey",
+            "location": "Near Lanquín, Alta Verapaz Department, Guatemala",
+            "description": "A hidden paradise with turquoise limestone pools surrounded by lush jungle. Great for swimming, relaxing, or exploring nearby caves.",
+            "image_url": "https://paraisoisland.com/semuc-champey-guatemala/"
+        },
+        {
+            "name": "Río Dulce & Livingston",
+            "location": "Río Dulce, Izabal Department, Guatemala",
+            "description": "A tropical river that leads to the Caribbean Sea. Livingston is known for Garifuna culture, music, and Afro-Caribbean cuisine.",
+            "image_url": null
+        },
+        {
+            "name": "Traditional Guatemalan Cuisine",
+            "location": "Throughout Guatemala",
+            "description": "Guatemalan food reflects rich cultural heritage. Dishes like pepián, kak’ik, and tamales blend Mayan and Spanish influences and offer a taste of local tradition.",
+            "image_url": null
+        }
+    ]
+
+}
