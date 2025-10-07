@@ -36,20 +36,43 @@ const displayitems = (items) => {
     portrait.height = 120;
 
     // location
-    const address = document.createElement('p');
-    address.textContent = `📍 ${item.address}`;
+    const location = document.createElement('p');
+    location.textContent = `📍 ${item.location}`;
     
 
-    
-    // description
-    const description = document.createElement('a');
-    description.textContent = description.name;
+    // short description
+    const description = document.createElement('p');
+    description.textContent = item.description;
 
+    // button
+    const button_learn_more = document.createElement('button');
+    button_learn_more.textContent = 'Learn More';
+    button_learn_more.classList.add('learn-more-btn');
 
-    
-    card.append(name, portrait, address, description);
+    // dialog
+    const dialog = document.createElement('dialog');
+    dialog.classList.add('info-dialog');
 
-    
+    // contenido del dialog
+    dialog.innerHTML = `
+      <h2>${item.name}</h2>
+      <p><strong>Location:</strong> ${item.location}</p>
+      <p><strong>Description:</strong> ${item.fullDescription}</p>
+      <button class="close-btn">Close</button>
+    `;
+
+    // evento para abrir el dialogo
+    button_learn_more.addEventListener('click', () => {
+      dialog.showModal();
+    });
+
+    // evento para cerrar el dialogo
+    dialog.querySelector('.close-btn').addEventListener('click', () => {
+      dialog.close();
+    });
+
+    // agregar todo al card
+    card.append(name, portrait, location, description, button_learn_more, dialog);
     cards.appendChild(card);
   });
 };

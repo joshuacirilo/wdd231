@@ -18,6 +18,11 @@
     <!--Link of css-->
     <link rel="stylesheet" href="styles/index.css">
     <link rel="stylesheet" href="styles/directory.css">
+    <link rel="stylesheet" href="styles/discover.css">
+    <link rel="stylesheet" href="styles/discover_small.css">
+    <link rel="stylesheet" href="styles/discover_large.css">
+    <link rel="stylesheet" href="styles/discover_medium.css">    
+
     <!--Link of favicon-->
     <link rel="icon" href="images/favicon.ico">
 
@@ -32,7 +37,7 @@
   <header class="site-header">
     <div class="container header-content">
       <div class="logo">GuateBusiness</div>
-      <nav class="nav">
+      <nav id="nav-bar" class="nav">
         <ul>
           <li><a href="https://joshuacirilo.github.io/wdd231/chamber/index">Home</a></li>
           <li><a href="#">Directory</a></li>
@@ -40,6 +45,7 @@
           <li><a href="#" class="btn-cta">Join</a></li>
         </ul>
       </nav>
+      <button id="ham-btn" class="hamburger"></button>
     </div>
   </header>
 
@@ -49,7 +55,9 @@
 
   <main>
         <h1>Chamber</h1>
+        <div id="message" class="visit-message"></div>
         <div id="cards"></div>
+
   </main>
 
 
@@ -103,6 +111,10 @@
 <!--Link of js-->
 <script src="scripts/discover_data.js"></script>
 <script src="scripts/getdate.js"></script>
+<script src="scripts/visitMessage.js"></script>
+<script src="scripts/navigation.js"></script>
+
+
 
     
 </body>
