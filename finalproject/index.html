@@ -49,11 +49,61 @@
 
     <main>  
         
-         <section id="hero">
+        <section id="hero">
           <img src="./images/hero_guatemala.png" alt="Guatemala_Hero" class="hero-img">
           <div class="hero-content">
           </div>
         </section>
+
+        <!-- ===== Culture & History Section ===== -->
+        <section id="culture-history" class="section">
+        <header class="section-header">
+            <h2>Culture &amp; History</h2>
+            <p>Guatemala is a land where ancient Mayan heritage meets vibrant modern traditions. Discover how its history, art, and customs shape the country's unique identity.</p>
+        </header>
+
+        <div class="history-container">
+            <h3>Beautiful Guatemala</h3>
+            <hr />
+
+            <div class="cards">
+            <article class="card">
+                <figure>
+                <img src="images/history.webp" alt="Guatemalan history" />
+                <figcaption>History</figcaption>
+                </figure>
+            </article>
+
+            <article class="card">
+                <figure>
+                <img src="images/culture.webp" alt="Guatemalan culture" />
+                <figcaption>Culture</figcaption>
+                </figure>
+            </article>
+
+            <article class="card">
+                <figure>
+                <img src="images/traditions.webp" alt="Guatemalan traditions" />
+                <figcaption>Traditions</figcaption>
+                </figure>
+            </article>
+            </div>
+        </div>
+        </section>
+
+        <!-- ===== Modal part ===== -->
+        <div id="infoModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h3 id="modal-title"></h3>
+            <p id="modal-description"></p>
+        </div>
+        </div>
+
+
+
+
+
         
     </main>
 
@@ -76,5 +126,6 @@
     <!--scripts-->
 <script src="scripts/getdate.js"></script>
 <script src="scripts/navigation.js"></script>
+<script src="scripts/modalmessageindex.js"></script>
 </body>
 </html>
