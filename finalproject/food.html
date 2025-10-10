@@ -19,8 +19,6 @@
 
 <link rel="stylesheet" href="styles/base.css"> 
 <link rel="stylesheet" href="styles/large.css"> 
-<link rel="stylesheet" href="styles/cardsplaces.css">
-
 
 
     <!-- Favicon-->
@@ -39,42 +37,27 @@
     </header>
     <nav id="nav-bar" class="navigation">
         <ul>
-            <li class="current"><a href="index.html">Home</a></li>
-            <li ><a href="#">Places</a></li>
-            <li ><a href="food.html">Food</a></li>
+            <li class="current"><a href="#">Home</a></li>
+            <li ><a href="places.html">Places</a></li>
+            <li ><a href="#">Food</a></li>
         </ul>
     </nav>
     
     <!--Header ends -->
 
-    <main>
 
+    <main> 
 
-        <!--places cards-->
-        <section id="places-section">
-        <h2>Discover Guatemala</h2>
-        <div id="cards" class="cards-container"></div>
+        <!--food cards-->
+        <section>
+        <h2>Typical Guatemalan Foods</h2>
+        <div id="food-container" class="food-grid"></div>
         </section>
 
-        <!--weather dialog-->
-      
-        <dialog id="weatherDialog" class="weather-dialog">
-        <div class="dialog-content">
-            <button id="closeDialog">×</button>
-            <h2 id="town"></h2>
-            <p id="description"></p>
-            <img id="graphic" alt="">
-            <p id="temperature"></p>
-            <div id="forecast" class="forecast-container"></div>
-        </div>
-        </dialog>
 
 
+        
     </main>
-
-
-
-
 
     <!--footer begining  -->
     <footer>
@@ -95,6 +78,6 @@
     <!--scripts-->
 <script src="scripts/getdate.js"></script>
 <script src="scripts/navigation.js"></script>
-<script src="scripts/cardplaces.js"></script>
+<script src="scripts/foodcard.js"></script>
 </body>
 </html>
