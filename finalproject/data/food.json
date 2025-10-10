@@ -52,7 +52,7 @@
         "Eggs"
       ],
       "special_fact": "Fiambre is a unique cold salad traditionally eaten on November 1st (All Saints’ Day). Families prepare it together to honor deceased loved ones.",
-      "image_url": "/finalproject/images/fiambre.webp"
+      "image": "/finalproject/images/fiambre.webp"
     },
     {
       "name": "Tamales Colorados",
@@ -77,7 +77,7 @@
         "Oil for frying"
       ],
       "special_fact": "These sweet fried plantain balls are filled with refried black beans and sugar — a popular dessert or snack found across Guatemala.",
-      "image_url": "/finalproject/images/rellenitos.webp"
+      "image": "/finalproject/images/rellenitos.webp"
     }
   ]
 }
