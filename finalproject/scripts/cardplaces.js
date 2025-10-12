@@ -1,4 +1,4 @@
-const url = '/data/places.json';
+const url = './data/places.json';
 const cards = document.querySelector('#cards');
 const weatherDialog = document.querySelector('#weatherDialog');
 const closeDialog = document.querySelector('#closeDialog');
