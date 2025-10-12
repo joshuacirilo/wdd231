@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", async () => {
   const container = document.querySelector("#food-container");
 
-  const jsonUrl = './data/food.json';
+  const jsonUrl = '/data/food.json';
 
   try {
     const response = await fetch(jsonUrl);
